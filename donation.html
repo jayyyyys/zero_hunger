@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Hunger | Donation </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <style>
+        .PaymentWays button{
+            width: 300px;
+            height: 50px;
+            margin: 20px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            font-family: monospace;
+         
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #04aa70;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #08db12;
+        }
+
+        #paymentdetails{
+            display: none;
+            margin-left: 10px;
+        }
+        .container{
+            display: flex;
+            
+        }
+        #checkmark{
+            display: none; /* Hides the button */
+            color: green; 
+            font-size: 24px; 
+            margin-top: 10px; /* Space above the checkmark */
+        }
+
+       
+
+
+    </style>
+</head>
+<main>
+<body>
+
+    <div id="main">
+        <nav>
+            <br>
+            <a href="./home.html">
+                <div class="nagBtn">
+                    Home
+                </div>
+            </a>
+            
+            <a href="./products.html">
+                <div class="nagBtn">
+                    Products
+                </div>
+            </a>
+
+            <a href="./donation.html">
+                <div class="selNavBtn">
+                    Donation
+                </div>
+            </a>
+            
+            <a href="./aboutus.html">
+                <div class="nagBtn">
+                    About Us
+                </div>
+            </a>
+        
+            <a href="./thankyou.html">
+                <div class="nagBtn">
+                    Our Message
+                </div>
+            </a>
+        </nav>
+
+        <article>
+            <div class="Banner">
+                <img src="./images/Bannersdg2.png" alt="" style="width: 100%; height: auto;">
+            </div>
+            <br><br><br><br>
+            <center>
+
+                <div class="PaymentWays">
+                    <button id="masterCardButton" class="button" onclick="changeColor(this)">PayPal</button>
+                </div>
+
+                <div class="PaymentWays">
+                    <button id="masterCardButton" class="button" onclick="changeColor(this)">MasterCard</button>
+                </div>
+
+                <div class="PaymentWays">
+                <form action="./PayWaysQR.html" method="get">
+                    <button type="submit" class="button">QRPay</button>
+                </form>
+                </div>
+          
+            
+            </center>
+
+            <title>Give & Get Form</title>
+            
+        
+            <h2>Give & Get Form</h2>
+            <form action="PayWaysMasterCard.html" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            
+                <label for="address">Shipping Address:</label>
+                <input type="text" id="address" name="address" required>
+            
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            
+                <label for="payment">State:</label>
+                <select id="payment" name="payment">
+                    <option value="credit_card">Selangor</option>
+                    <option value="paypal">Kuala Lumpur</option>
+                    <option value="bank_transfer">Johor</option>
+                </select>
+            
+                <label for="zip">Zip Code:</label>
+                <input type="number" id="zip" name="zip" required>
+            
+                <div class="aboutUsBox">
+                    <button type="button" onclick="showCheckmark()">Confirm Details</button>
+                    
+
+                    <script>
+                        function showCheckmark() {
+                            document.getElementById("checkmark").style.display = "block";
+                        }
+                    </script>
+                
+
+                <div id="checkmark">&check;
+                    <button id="toggleButton">Proceed With Payment Details</button>
+                    
+                </div>
+            </form>
+        </div>
+        </article>     
+
+    
+        
+
+    </div>
+
+
+
+        <footer>
+            <a href="maiilto:0362709@sd.taylors.edu.my">0362709@sd.taylors.edu.my</a>
+            <br>
+            <address>
+            Written by Jayron Poi Jing Ker<br>
+            2024Sep Web Development Technologies<br>
+            Taylor's University Lakeside Campus<br>
+            Malaysia
+            </address>
+            <br>
+        </footer>
+
+</body>
+</main>
+</html>

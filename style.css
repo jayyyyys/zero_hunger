@@ -1,0 +1,158 @@
+       
+        body{
+            margin: 0; 
+        }
+        
+        
+        #main{
+            display: flex; 
+            min-height: 88vh;  
+        }
+
+        
+        #main > article{
+            flex: 1;
+        }
+
+
+        #main > nav{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            flex: 0 0 35vh;
+            background-color: #f1f1f1;
+            order: -1;
+        }
+
+        footer{
+            padding-top: 5px;
+            padding-left: 8px;
+            max-height: 22vh;  
+            min-height: 12vh;
+            background-color: #04aa70;
+        }
+
+        .nagBtn{
+           
+            padding: 13px;
+            margin-bottom: 6px;
+        }
+
+        .selNavBtn{
+            background-color: #04aa70;
+            padding: 13px;
+            margin-bottom: 6px;
+            box-shadow: 2px 2px 8px black;
+        }
+
+        .selNavBtn a{
+            color: #f1f1f1;
+            text-shadow: 2px 2px 6px black;
+        }
+
+        .nagBtn:hover{
+            background-color: #145a41;
+            box-shadow: 2px 2px 8px rgb(28, 156, 47);
+            color: white;
+        }
+
+        .nagBtn:hover a{
+            color: #f1f1f1;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        button{
+            padding: 8px 12px;
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+        button:hover{
+            background-color: rgb(103, 116, 128);
+            box-shadow: 2px 2px 6px black;
+        }
+       
+        .ContentBox{
+            padding: 0px 5px 5px 10px;    
+            font-weight: bold;
+            font-size: 78px;
+            line-height: 90px;
+            text-align: left;
+
+        }
+    
+        .Banner{
+            display: inline;
+            width: 100vh; 
+            background-size: cover;
+        }
+        .Banner img{
+            background-repeat: none;
+            background-size: cover;
+            height: 50px;
+            width: 100%;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+          }
+        
+        .card-hover{
+            background: #0056b3;
+        }
+
+
+        .fact{
+            display: inline-block;
+            margin: 0 auto;
+            width: auto;
+            font-family: 'Montserrat', serif;
+            font-weight: 400;
+            ;
+        }
+        
+
+        .permanent-marker-regular {
+            font-family: "Permanent Marker", serif;
+            font-weight: 400;
+            font-style: normal;
+            color:orange;
+            width: auto;
+        }
+     
+        .aboutUsBox{
+            padding: 0px 5px 5px 10px;    
+            font-weight: 260;
+            color: #145a41;
+           
+            font-size: 20px;
+            line-height: 30px;
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+            margin: 10;
+            
+        }
+
+        .divider{   
+            display: flex;
+            justify-content: space-around; 
+            align-items: flex-start; 
+        }
+        
+        .elonmusk{
+            display: block;
+            margin:auto;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 50px;
+            font-weight: 250;
+            line-height: 1.5;
+            color: #0056b3;
+
+        }
+        

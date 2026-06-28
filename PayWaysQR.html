@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Hunger | Payment Ways </title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      
+        .PaymentTitle{
+            border: 1px solid black;
+            width: 250px;
+            height: 40px;
+            padding: 5px 5px;
+        }
+        form{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 0px 10px 10px 10px;
+            width: 350px;
+            height: 250px;
+            font-size: 20px;
+        }
+        article form div div{
+            display: inline;
+        }
+        .PayBtn{
+            width: 80px;
+            height: 30px;
+        }
+
+        #QR{
+            float: right;
+        }
+
+        .file-upload{
+            position: relative;
+        }
+
+        .upload-button{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fc79c1; 
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid #ffffff; 
+        }
+
+        .upload-button:hover {
+            background-color: #fccfe8;
+        }
+       
+
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <nav>
+            <br>
+            <a href="./home.html">
+                <div class="nagBtn">
+                    Home
+                </div>
+            </a>
+            
+            <a href="./products.html">
+                <div class="nagBtn">
+                    Products
+                </div>
+            </a>
+
+            <a href="./donation.html">
+                <div class="nagBtn">
+                    Donation
+                </div>
+            </a>
+            
+            <a href="./aboutus.html">
+                <div class="nagBtn">
+                    About Us
+                </div>
+            </a>
+        
+            <a href="./thankyou.html">
+                <div class="nagBtn">
+                    Our Message
+                </div>
+            </a>
+        </nav>
+       
+       
+        </article>
+
+        <div class="ContentBox">
+            <center>
+                <div class="Banner">
+                    <img src="./images/bannerb.jpg" alt="" style="width: 118%; background-size: cover;">
+                    </div>
+        
+                        <div style="display: flex; justify-content: space-between;padding: 15px; align-items: center; font-family: Montserrat;">
+                            <div style="flex: 1; text-align: left;">
+                                Be sure to save the receipt!
+                                <div class="file-upload">
+                                    <input type="file" name="receipt" id="receipt" style="display: none;">
+                                    <label for="receipt" class="upload-button" onclick="showCheckmark()">Upload here</label>
+
+                                    <div id="checkmark" hidden>✔️</div> 
+                                        <script>
+                                            function showCheckmark() {
+                                                document.getElementById("checkmark").style.display = "block";
+                                            }
+                                        </script>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="flex: 0 0 auto; margin-left: 20px;">
+                                <img src="./images/qrpay.JPG" alt="QRcode" width="40%" style="padding: 10px;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+
+
+
+    
+
+    </div>
+
+    <footer>
+        <a href="maiilto:0362709@sd.taylors.edu.my">0362709@sd.taylors.edu.my</a>
+        <br>
+        <address>
+        Written by Jayron Poi Jing Ker<br>
+        2024Sep Web Development Technologies<br>
+        Taylor's University Lakeside Campus<br>
+        Malaysia
+        </address>
+        <br>
+    </footer>
+
+</body>
+</html>

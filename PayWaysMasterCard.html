@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Hunger | Payment Ways </title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .PaymentWays button{
+            width: 300px;
+            height: 50px;
+            margin: 20px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .PaymentTitle{
+            border: 1px solid black;
+            width: 250px;
+            height: 40px;
+            padding: 5px 5px;
+        }
+        form{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 0px 10px 10px 10px;
+            width: 350px;
+            height: 250px;
+            font-size: 20px;
+        }
+        article form div div{
+            display: inline;
+        }
+        .PayBtn{
+            width: 80px;
+            height: 30px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <nav>
+            <br>
+            <a href="./home.html">
+                <div class="nagBtn">
+                    Home
+                </div>
+            </a>
+            
+            <a href="./products.html">
+                <div class="nagBtn">
+                    Products
+                </div>
+            </a>
+
+            <a href="./donation.html">
+                <div class="nagBtn">
+                    Donation
+                </div>
+            </a>
+            
+            <a href="./aboutus.html">
+                <div class="nagBtn">
+                    About Us
+                </div>
+            </a>
+        
+            <a href="./thankyou.html">
+                <div class="nagBtn">
+                    Our Message
+                </div>
+            </a>
+        </nav>
+
+        <article>
+            <div class="Banner">
+                <img src="./images/Bannersdg2.png" style="width: 100%; height: auto;" alt="">
+            </div>
+            <br><br><br><br>
+            <center>
+                <h2 class="PaymentTitle">MasterCard/PayPal</h2>
+                <br>
+                <form action="./thankyou.html" style="text-align: left;">
+                    <ins><h2 style="margin: 1px; padding: 7px 5px;">Credit Card</h2></ins>
+                    <label for="CardNum">&nbsp;Card Number</label> <br>
+                    <input type="number" name="CardNum" id="CardNum" required >
+                    <br><br>
+                    <div >
+                        <div>
+                            <div>
+                                <label for="ExpDate">&nbsp;Expiry Date <br>MM/YYYY</label>  
+
+                            </div>
+                            <div>
+                                <label for="CVC">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    CVC</label> 
+                            </div>
+                        </div>
+                       <br>
+                        <div>
+                            <div>
+                                <input type="month" name="ExpDate" id="ExpDate" required>
+                            </div>&nbsp;&nbsp;&nbsp;
+                            <div>
+                                <input type="number" name="CVC" id="CVC" min="000" max="999" required>
+
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <center>
+                        <input type="submit" value="Pay" class="PayBtn">
+                    </center>                    
+                </form>
+
+            </center>
+
+
+
+        </article>
+
+
+    </div>
+    <footer>
+        <a href="maiilto:0362709@sd.taylors.edu.my">0362709@sd.taylors.edu.my</a>
+        <br>
+        <address>
+        Written by Jayron Poi Jing Ker<br>
+        2024Sep Web Development Technologies<br>
+        Taylor's University Lakeside Campus<br>
+        Malaysia
+        </address>
+        <br>
+    </footer>
+
+</body>
+</html>
